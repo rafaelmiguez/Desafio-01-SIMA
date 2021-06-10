@@ -1,0 +1,183 @@
+<!DOCTYPE html5>
+<html land="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="Imagens/LogoSoja.ico">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <style>
+        
+.pagina{
+font-size: 20px;
+width: 100vw;
+height: 102vh;
+background-color: rgb(232, 250, 243);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin: -20px;
+}
+
+#myMap{
+width: 100%;       
+height: 100%;
+}
+
+#imglogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.caixatitulo{
+  display: flex;
+  font-size: 20px;
+  width: 100%;
+  height: 13%;
+  background-color: rgb(150, 185, 44);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caixaconteudo{
+  width: 100%;
+  height: 90%;
+  background-color: rgb(174, 255, 208);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.caixamapa{
+  border: 2px solid black;
+  width: 55%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(195, 195, 195);
+  
+  
+}
+
+.partedecima{
+  /*background-color: rgb(71, 71, 128);*/
+  width: 100%;
+  height: 65%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.partedebaixo{
+  /*background-color: rgb(90, 114, 66);*/
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.texto1{
+  border-radius: 30px;  
+  border: 2px solid black;
+  background-color: rgb(153, 217, 234);
+  width: 20%;
+  height: 65%;
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+.texto3{
+  border-radius: 30px;  
+  border: 2px solid black;
+  background-color: rgb(0, 162, 232);
+  width: 35%;
+  height: 75%;
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+.titulo{
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+
+}
+
+
+.divimagem{
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#imggraf{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mapid { 
+  height: 180px;
+}
+</style>
+
+</head>    
+
+<body>
+
+    <div class="pagina">
+        <div class="caixatitulo">
+          
+            <h1 class="titulo">
+              Produtividade sustentavel da região oeste da Bahia
+            </h1>
+            <div class="divimagem">
+            <img src="Imagens/Senai-200.png" alt="Logo do Senai" id="imglogo"/>
+            </div>
+        </div>
+        <div class="caixaconteudo">
+          <div class="partedecima">
+            <div class="texto1">
+              <p>
+                A região oeste baiana possui um papel fundamental na produtividade agrícola brasileira. Porém, existe um problema na produtividade, sendo esse problema a sustentabilidade dos biomas da caatinga e da mata atlântica presentes na área, considerados um dos biomas mais ameaçados do Brasil. 
+               <br></br>O mapa ao lado apresenta as principais regiões do oeste da Bahia e a porcentagem da falta de sustentabilidade que ocorre no local.
+              </p>
+            </div>
+            <div class="caixamapa">
+                <div id="myMap"></div>
+                <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+                integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+                crossorigin=""></script>
+                <script src="map.js"></script>
+            </div>
+          </div>
+          <div class="partedebaixo">
+              <div class="texto3">
+                <p>
+                  A realidade socioambiental da região oeste da Bahia como visto e analisado está se tornando algo que precisa ser controlado para a preservação do meio ambiente.
+                  <br></br>
+                  <br></br>
+                  Com isso, caso queira, Envie um email para: <b>emailficticio@fonteficticia.com</b> para enviar ideias de ações que podem ser aplicadas nesse cenário de sustentabilidade com o objetivo de reverter a situação.
+                </p>
+              </div>
+            </div> 
+        </div>
+      </div>
+
+</body>
+
+
+</html>
